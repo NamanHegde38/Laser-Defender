@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7106287338394971484
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7106287338394971486}
+  - component: {fileID: 7106287338394971487}
+  m_Layer: 0
+  m_Name: Enemy Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7106287338394971486
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7106287338394971484}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7106287338394971487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7106287338394971484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed7352cdaec9b24e827f0b03b3a8071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waveConfigs:
+  - {fileID: 11400000, guid: 66d4d32ac3726cb4195e9c8a797fca60, type: 2}
+  - {fileID: 11400000, guid: e45e7099f6f21ab408050ebae85cfc57, type: 2}
+  - {fileID: 11400000, guid: 645aef9cfad6fdb41952611fcbf855e5, type: 2}
+  - {fileID: 11400000, guid: 38be2a904b982b44da6e81c4a37e43c1, type: 2}
+  - {fileID: 11400000, guid: 7de4b425067725148ae50f2f83ade74c, type: 2}
+  - {fileID: 11400000, guid: 1128b0ba5003d234cbd531075cb41116, type: 2}
+  - {fileID: 11400000, guid: e50ad21d559d77046a237468237f0714, type: 2}
+  - {fileID: 11400000, guid: 5690aa60b28fa0944bf1035074e6ded9, type: 2}
+  - {fileID: 11400000, guid: 94d975feda1d54f41ac08856b05a0982, type: 2}
+  - {fileID: 11400000, guid: f1bb0e0ede75ea44f950f0dea7d27fa8, type: 2}
+  looping: 1
