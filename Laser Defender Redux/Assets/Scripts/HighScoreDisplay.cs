@@ -12,6 +12,9 @@ public class HighScoreDisplay : MonoBehaviour {
     }
     
     private void Update() {
+        if (!_gameSession) {
+            _gameSession = FindObjectOfType<GameSession>();
+        }
         _highScoreText.text = _gameSession.GetHighScore().ToString();
     }
 }

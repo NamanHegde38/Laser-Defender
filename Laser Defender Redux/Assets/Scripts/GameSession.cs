@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 public class GameSession : MonoBehaviour {
@@ -25,11 +24,13 @@ public class GameSession : MonoBehaviour {
     }
 
     public int GetScore() {
+        ConsoleProDebug.Watch("Score Being Sent", _score.ToString());
         return _score;
     }
 
     public void AddToScore(int scoreValue) {
         _score += scoreValue;
+        ConsoleProDebug.Watch("Score Being Added", _score.ToString());
     }
 
     public int GetHighScore() {

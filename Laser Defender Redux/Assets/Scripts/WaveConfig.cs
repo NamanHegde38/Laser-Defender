@@ -10,7 +10,10 @@ public class WaveConfig : ScriptableObject {
     [SerializeField] private float spawnRandomFactor = 0.3f;
     [SerializeField] private int numberOfEnemies = 5;
     [SerializeField] private float moveSpeed = 2f;
-
+    [SerializeField] private AudioClip enemySpawnSFX;
+    [Range(0, 1)] [SerializeField] private float spawnVolume;
+    
+    
     public GameObject GetEnemyPrefab() {
         return enemyPrefab;
     }
@@ -38,5 +41,13 @@ public class WaveConfig : ScriptableObject {
 
     public float GetMoveSpeed() {
         return moveSpeed;
+    }
+
+    public AudioClip GetSpawnSound() {
+        return enemySpawnSFX;
+    }
+
+    public float GetSpawnVolume() {
+        return spawnVolume;
     }
 }

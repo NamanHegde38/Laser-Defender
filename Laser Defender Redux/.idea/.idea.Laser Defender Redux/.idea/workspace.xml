@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="c2051480-7351-46d1-8828-377cf2f1a7ad" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,12 +13,41 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../../Block-Breaker/Block Breaker DX/Assets/Scripts/Block.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Background.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../Block-Breaker/Block Breaker DX/Assets/Scripts/SceneLoader.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Projectile.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/BackgroundScroller.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Projectile.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/DamageDealer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Background.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameSession.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/HighScoreDisplay.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/ScoreDisplay.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/HealthDisplay.cs" />
+      <option value="$PROJECT_DIR$/Assets/Plugins/Data Visualization Resources/Scripts/OilGauge.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/EnemyPathing.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Level.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MusicPlayer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/WaveConfig.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/ReduxWaveConfig.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Plugins/Data Visualization Resources/Scripts/Wavecircle.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/EnemySpawner.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1x2ACIUNdTp1qWhy7X5I63X4eSE" />
@@ -29,6 +61,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -64,6 +97,24 @@
       <workItem from="1629743236778" duration="1481000" />
       <workItem from="1629818315456" duration="1548000" />
       <workItem from="1629897713343" duration="2019000" />
+      <workItem from="1633800075392" duration="40000" />
+      <workItem from="1633800150976" duration="373000" />
+      <workItem from="1633978433647" duration="4530000" />
+      <workItem from="1634056996955" duration="4234000" />
+      <workItem from="1634407138523" duration="1348000" />
+      <workItem from="1634450195107" duration="1056000" />
+      <workItem from="1634451283675" duration="10435000" />
+      <workItem from="1634480023194" duration="3767000" />
+      <workItem from="1634658670730" duration="6477000" />
+      <workItem from="1634672361060" duration="24000" />
+      <workItem from="1634672413314" duration="795000" />
+      <workItem from="1634748155662" duration="4622000" />
+      <workItem from="1634991453915" duration="6507000" />
+      <workItem from="1635011977161" duration="728000" />
+      <workItem from="1635080041766" duration="5340000" />
+      <workItem from="1635097821488" duration="732000" />
+      <workItem from="1635676187934" duration="858000" />
+      <workItem from="1635679502760" duration="179000" />
     </task>
     <servers />
   </component>

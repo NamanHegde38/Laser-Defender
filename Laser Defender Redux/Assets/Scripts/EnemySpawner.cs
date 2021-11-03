@@ -1,15 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
+using PathCreation;
 using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour {
 
-    [SerializeField] private List<WaveConfig> waveConfigs;
+    [SerializeField] private List<ReduxWaveConfig> waveConfigs;
     [SerializeField] private bool looping;
-    
+
     private const int StartingWave = 0;
+    private AudioListener _audioListener;
 
     private IEnumerator Start() {
+        _audioListener = FindObjectOfType<AudioListener>();
         do {
             yield return StartCoroutine(SpawnAllWaves());
         } while (looping);
@@ -23,12 +26,15 @@ public class EnemySpawner : MonoBehaviour {
     }
     
     // ReSharper disable Unity.PerformanceAnalysis
-    private static IEnumerator SpawnAllEnemiesInWave(WaveConfig waveConfig) {
+    private IEnumerator SpawnAllEnemiesInWave(ReduxWaveConfig waveConfig) {
         for (var enemyCount = 0; enemyCount < waveConfig.GetNumberOfEnemies(); enemyCount++) {
             var newEnemy = Instantiate(
                 waveConfig.GetEnemyPrefab(),
-                waveConfig.GetWaypoints()[0].transform.position,
+                waveConfig.GetPath().GetComponent<PathCreator>().path.GetPoint(0),
                 Quaternion.identity);
+            if (waveConfig.GetSpawnSound()) {
+                AudioSource.PlayClipAtPoint(waveConfig.GetSpawnSound(), _audioListener.transform.position, waveConfig.GetSpawnVolume());
+            }
             newEnemy.GetComponent<EnemyPathing>().SetWaveConfig(waveConfig);
             yield return new WaitForSeconds(waveConfig.GetTimeBetweenSpawns());
         }

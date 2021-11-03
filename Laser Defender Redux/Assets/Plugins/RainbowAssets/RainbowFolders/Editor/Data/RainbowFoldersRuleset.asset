@@ -29,7 +29,7 @@ MonoBehaviour:
     Key: Audio
     Ordinal: 1
     Priority: 0
-    IconType: 2020
+    IconType: 2520
     SmallIcon: {fileID: 0}
     LargeIcon: {fileID: 0}
     IsIconRecursive: 0
@@ -390,6 +390,18 @@ MonoBehaviour:
     Ordinal: 31
     Priority: 0
     IconType: 2010
+    SmallIcon: {fileID: 0}
+    LargeIcon: {fileID: 0}
+    IsIconRecursive: 0
+    BackgroundType: 0
+    BackgroundTexture: {fileID: 0}
+    IsBackgroundRecursive: 0
+    IsHidden: 0
+  - Type: 1
+    Key: Assets/Animation
+    Ordinal: 32
+    Priority: 0
+    IconType: 10
     SmallIcon: {fileID: 0}
     LargeIcon: {fileID: 0}
     IsIconRecursive: 0

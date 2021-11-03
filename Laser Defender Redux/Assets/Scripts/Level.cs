@@ -1,30 +1,73 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using MoreMountains.Feedbacks;
 
 public class Level : MonoBehaviour {
 
     [SerializeField] private float delayInSeconds;
+
+    [SerializeField] private MMFeedbacks startFeedback, quitFeedback;
+    [SerializeField] private MMFeedbacks loadStartFeedback, loadEndFeedback;
+
+    private void Start() {
+        loadEndFeedback.Initialization();
+        PlayLoadFeedbacks();
+    }
     
-    public void LoadStartMenu() {
+    private void PlayLoadFeedbacks() {
+        var currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        
+        if (currentSceneIndex != 1) {
+            loadEndFeedback?.PlayFeedbacks();
+        }
+        else {
+            var splashScreen = FindObjectOfType<SplashScreen>();
+            if (!splashScreen) {
+                loadEndFeedback?.PlayFeedbacks();
+                Debug.Log(loadEndFeedback.IsPlaying);
+            }
+            else {
+                Destroy(splashScreen);
+                startFeedback?.PlayFeedbacks();
+            }
+        }
+    }
+    
+    public void LoadStartScene() {
         FindObjectOfType<GameSession>().ResetGame();
-        SceneManager.LoadScene(0);
+        StartCoroutine(LoadScene(1));
     }
 
     public void LoadGame() {
-        SceneManager.LoadScene("Game");
+        StartCoroutine(LoadScene(2));
     }
-
+    
     public void LoadGameOver() {
         StartCoroutine(WaitAndLoad());
     }
-
+    
     private IEnumerator WaitAndLoad() {
         yield return new WaitForSeconds(delayInSeconds);
-        SceneManager.LoadScene("Game Over");
+        StartCoroutine(LoadScene(3));
     }
     
+    private IEnumerator LoadScene(int sceneIndex) {
+        loadStartFeedback?.PlayFeedbacks();
+        if (loadStartFeedback is { })
+            yield return new WaitForSeconds(loadStartFeedback.TotalDuration);
+        SceneManager.LoadScene(sceneIndex);
+    }
+
     public void QuitGame() {
+        StartCoroutine(Quit());
+    }
+    
+    private IEnumerator Quit() {
+        quitFeedback?.PlayFeedbacks();
+        if (quitFeedback is { })
+            yield return new WaitForSeconds(quitFeedback.TotalDuration);
         Application.Quit();
     }
 }

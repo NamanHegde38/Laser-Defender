@@ -27,6 +27,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_fd0fa66c99b14c849b426c14494f1153_Texture_1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -42,6 +46,7 @@ Material:
     m_Ints: []
     m_Floats: []
     m_Colors:
-    - _Color: {r: 137.187, g: 0, b: 0, a: 0}
+    - _Color: {r: 183.15544, g: 0, b: 0, a: 1}
     - _Hue: {r: 1, g: 1, b: 1, a: 0}
+    - _SecondaryColor: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []

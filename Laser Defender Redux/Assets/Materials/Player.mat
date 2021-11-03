@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Player
-  m_Shader: {fileID: -6465566751694194690, guid: 8ba6f6cc4e75ff24a909ed87d888d361, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 710b08910ee316e44bf348db13868462, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -27,6 +27,10 @@ Material:
         m_Texture: {fileID: 2800000, guid: 57a0f678af6473e4799ecc1ae8a36b2f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_fd0fa66c99b14c849b426c14494f1153_Texture_1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -42,8 +46,15 @@ Material:
     m_Ints: []
     m_Floats:
     - Thickness: 1
+    - _Dissolve: 1
+    - _DissolveScale: 7.5
+    - _Outline: 0.1
     m_Colors:
-    - _Color: {r: 0, g: 0, b: 0, a: 0}
+    - _Color: {r: 0.0007314645, g: 0.0007314645, b: 0.0007314645, a: 0}
+    - _DissolveColor: {r: 0, g: 1.925926, b: 3.9999995, a: 1}
+    - _GlowColor: {r: 0.00073529413, g: 0.00073529413, b: 0.00073529413, a: 0}
+    - _Hue: {r: 0.3490566, g: 0.33423817, b: 0.33423817, a: 0}
     - _OutlineColor: {r: 6.200293, g: 240.43079, b: 885.76, a: 1}
     - _OutlineColor2: {r: 0, g: 2.2064207, b: 7.999999, a: 1}
+    - _SecondaryColor: {r: 0, g: 3.278422, b: 89.45409, a: 0}
   m_BuildTextureStacks: []

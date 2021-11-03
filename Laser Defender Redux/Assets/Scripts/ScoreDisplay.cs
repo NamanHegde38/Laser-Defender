@@ -12,6 +12,9 @@ public class ScoreDisplay : MonoBehaviour {
     }
 
     private void Update() {
+        if (!_gameSession) {
+            _gameSession = FindObjectOfType<GameSession>();
+        }
         _scoreText.text = _gameSession.GetScore().ToString();
     }
 }
