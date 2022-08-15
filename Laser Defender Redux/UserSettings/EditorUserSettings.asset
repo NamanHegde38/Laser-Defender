@@ -5,6 +5,18 @@ EditorUserSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 4
   m_ConfigSettings:
+    RecentlyUsedSceneGuid-0:
+      value: 0607045551010b5a5c0a0a2412220b4414161b7a7f7c7269797e4a35b2b4663d
+      flags: 0
+    RecentlyUsedSceneGuid-1:
+      value: 0050060053540859580b087342710944134e1a7e2d2a233175791b61e4b63261
+      flags: 0
+    RecentlyUsedSceneGuid-2:
+      value: 5706065204005e58555d087a4277074440154f7c7c2c7736757c4b64b1e46769
+      flags: 0
+    RecentlyUsedSceneGuid-3:
+      value: 515250075c0c595e5f5a5e71122159444e4e4a2f7a7d7f602f284d66b4b76661
+      flags: 0
     RecentlyUsedScenePath-0:
       value: 224247031146466b011b0b2b1e3010341703196a1a2135252c251429e3f43d37eca704ecf4352a2e3a07fc73373d0431f719462ff71f0b4b2707ee1b10f3190910d111ca14984d5cef1c11c18308dfeac1cf
       flags: 0
@@ -52,9 +64,13 @@ EditorUserSettings:
   m_VCDebugCmd: 0
   m_VCDebugOut: 0
   m_SemanticMergeMode: 2
+  m_DesiredImportWorkerCount: 3
+  m_StandbyImportWorkerCount: 2
+  m_IdleImportWorkerShutdownDelay: 60000
   m_VCShowFailedCheckout: 1
   m_VCOverwriteFailedCheckoutAssets: 1
   m_VCProjectOverlayIcons: 1
   m_VCHierarchyOverlayIcons: 1
   m_VCOtherOverlayIcons: 1
   m_VCAllowAsyncUpdate: 1
+  m_ArtifactGarbageCollection: 1

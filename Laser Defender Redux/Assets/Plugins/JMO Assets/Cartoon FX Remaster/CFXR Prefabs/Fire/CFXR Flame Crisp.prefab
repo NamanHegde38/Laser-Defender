@@ -8,6 +8,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2421226186157800130, guid: af304c622ca86a045a1280a5154d2bb1, type: 3}
+      propertyPath: moveWithTransform
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2421226186157800130, guid: af304c622ca86a045a1280a5154d2bb1, type: 3}
       propertyPath: InitialModule.startColor.maxColor.b
       value: 0.07008722
       objectReference: {fileID: 0}
